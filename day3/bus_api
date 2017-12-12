@@ -1,0 +1,11 @@
+# Ruby 샘플 코드 #
+
+
+require 'rubygems'
+require 'rest_client'
+require 'cgi'
+
+url = 'http://ws.bus.go.kr/api/rest/arrive/getLowArrInfoByRoute'
+headers = { :params => { CGI::escape('ServiceKey') => '서비스키',CGI::escape('stId') => '',CGI::escape('busRouteId') => '' } }
+response = RestClient::Request.execute :method => 'GET', :url => url , :headers => headers
+puts response
