@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="/">홈으로 가기</a><br>
+	<h1>전체결과 입니다.</h1>
+	<p><%= @list %></p>
+	<% @list.each do |row|%> 
+		<%= row[0] %>님이 <%= row[1] %>을 투표했습니다. <br>	
+	<% end %>
+</body>
+</html>
