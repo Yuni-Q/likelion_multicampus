@@ -125,7 +125,8 @@
 ruby>bundle
 ```
 
-- - 환율 정보
+- Day 03 시작2
+  - 환율 정보
 
 ```ruby
 require 'eu_central_bank'
