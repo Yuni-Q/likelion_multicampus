@@ -9,7 +9,7 @@
   > rails g 한 것을 없앨 때 사용 !!
 
   ```ruby
-  before_action : set_post, only [:show, :edit, :destroy]
+  before_action :set_post, only [:show, :edit, :destroy]
   private
   def set_post
     @id =params[:id]
