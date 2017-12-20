@@ -42,6 +42,7 @@
   source ~/.bashrc #명령어 업데이트
   rs #이제 rs만 치면 rails s =b 0.0.0.0가 실행 됨 
   ```
+    > window만 가능?;;
 
 - 전송 방법
 
@@ -70,7 +71,7 @@
     > CSRF공격 예방 하는 건데 주석 처리
     >
     > ```ruby
-    > <input type="hidden" name="" value="authenticity_token" value="<%= form_authenticity_token %>">
+    > <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     > ```
     >
     > 위의 방식은 안전하지 않기 때문에 폼 마지막에 위와 같이 넣어 주면 된다.
