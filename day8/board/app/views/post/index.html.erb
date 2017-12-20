@@ -6,7 +6,7 @@
   <p><%= p.title %></p>
   <p><%= p.content %></p>
   <p><a href="/post/show/<%= p.id %>">보기</a></p>
-  <p><a href="/post/destroy/<%= p.id %>">삭제</a> </p>
+  <p><a data-confirm="정말 지울꺼니?" data-method="delete" href="/post/destroy/<%= p.id %>">삭제</a> </p>
   <p><a href="/post/edit/<%= p.id %>">수정</a></p>
   <hr>
 <% end %>

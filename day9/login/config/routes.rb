@@ -1,19 +1,12 @@
 Rails.application.routes.draw do
-  root 'post#index'
+  root 'user#index'
 
-  get 'post/new'
-
-  post 'post/create'
-
-  get 'post/show/:id' => 'post#show'
-
-  delete 'post/destroy/:id' => 'post#destroy'
-
-  get 'post/edit/:id' => 'post#edit'
-
-  post 'post/update/:id' => 'post#update'
-
-
+  get 'user/new'
+  get 'user/login'
+  get 'user/logout'
+  
+  post 'user/create'
+  post 'user/login_process'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
