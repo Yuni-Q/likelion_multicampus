@@ -1,0 +1,11 @@
+<% @posts.each do |post| %>
+<div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-title"><%= post.title %></h4>
+    <p class="card-text"><%= post.content %></p>
+    <a href="/post/show/<%= post.id %>" class="btn btn-primary">보기</a>
+    <a href="/post/edit/<%= post.id %>">수정</a>
+    <a data-method="delete" href="/post/destroy/<%= post.id %>">삭제</a>
+  </di v>
+</div>
+<% end %>
