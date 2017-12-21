@@ -1,7 +1,7 @@
 class PostController < ApplicationController
+  before_action :authenticate_user, except: :index
   def index
   	@posts = Post.all.order("title")
-    
   end
 
   def new
