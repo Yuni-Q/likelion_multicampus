@@ -1,0 +1,5 @@
+<% 100.times do |i| %>
+   post_<%= i+1 %>:
+     title: <%= Faker::OnePiece.character %> 
+     content: <%= Faker::Lorem.paragraph 20 %>
+<% end %>

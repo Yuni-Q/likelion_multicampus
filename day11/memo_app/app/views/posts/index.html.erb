@@ -1,0 +1,19 @@
+<h1>Hack Your Post</h1>
+
+<div class="table-responsive">
+	<table class="table bale fil">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>created_at</th>
+			</tr>
+		</thead>
+		<% @posts.each do |post| %>
+		<tbody>
+			<td><%= link_to post.title, post_path(post) %></td>
+			<td><%= icon 'time' %><%= local_time(post.created_at) %></td>
+		</tbody>
+		<% end %>
+	</table>
+	<%= paginate @posts %>
+</div>

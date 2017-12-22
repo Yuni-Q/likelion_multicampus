@@ -1,0 +1,11 @@
+<h1><%= @post.title %></h1>
+
+<hr>
+<%= @post.content.html_safe %>
+<hr>
+
+<%= icon 'pencil' %>
+<%= link_to '수정하기', edit_post_path %> 
+|
+<%= icon 'trash' %>
+<%= link_to '삭제하기', post_path, method: :delete, data: {confirm: '정말로 삭제합니다'} %>

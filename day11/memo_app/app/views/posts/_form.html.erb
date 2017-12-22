@@ -1,0 +1,6 @@
+<%= bootstrap_form_for(@post) do |f| %>
+	<%= f.text_field :title,label: '제목' %>
+	<%= f.text_area :content, label: '내용', class: 'tinymce', rows: 15, cols: 120 %>
+	<%= tinymce %>
+	<%= f.submit %>
+<% end %>
