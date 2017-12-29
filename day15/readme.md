@@ -205,9 +205,14 @@
 
   ```bash
   echo "# aa" >> README.md
+  echo "# aa" > README.md
   ```
 
   > readme 없으면 만들기
+  >
+  > \> 는 덮어쓰기
+  >
+  > \>\>는 append
 
   ```bash
   cat 파일명
@@ -249,6 +254,31 @@
   gc -m "hello" => git commit
   ```
 
-  ​
+- Vim 꾸미기
 
-  ​
+  ```bash
+  (vim bootstrap에서 내가 사용하는 프로그램 클릭 후 다운로드)
+  mv generate.vim .vimrc (이름 바꾸기)
+  la (.vimrc가 보여야 한다)
+  mv .vimrc ~
+  vim (설치 된다)
+  ```
+
+  - 연동문제 (path)
+  - cat ~/.bashrc (조금 다를 수 있음)
+  - 마지막 3줄 복사
+  - vi ~/.zshrc
+  - export 밑에 붙여넣기
+  - source ~/.zshrc (실행한번해줘야함)
+
+- uniq 파일.txt -> 중복 제거
+
+- 대문자 L -> o 하면 마지막줄 갈 수 있음
+
+- u -> 컨트롤 z랑 같음
+
+- grep -i coffee coffee.txt (찾기)
+
+- grep -R coffee (폴더 다 찾아줌)
+
+- ​
